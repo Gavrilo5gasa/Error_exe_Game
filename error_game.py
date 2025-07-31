@@ -1,7 +1,5 @@
 from tkinter import *
 
-
-
 def game():
     while True:
         def move_up(event):

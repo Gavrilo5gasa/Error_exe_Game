@@ -1,7 +1,8 @@
 from tkinter import *
 from tkinter import messagebox
+
+from console import console_run
 from error_settings import settings
-from error_game import game
 
 def confirmed():
     if messagebox.askyesno(title="Do you want to continue", message="Are you shure your password is strong"):
@@ -9,6 +10,7 @@ def confirmed():
         return error_exe_app()
 
 def error_exe_app():
+    global play_game
     while True:
         error_app = Tk()
         error_app.title("Error.exe")
@@ -21,11 +23,9 @@ def error_exe_app():
                            command=settings)
         settings1.place(x=1450, y=800)
 
-        play_game = Button(error_app,
+        dev_mode = Button(error_app,
                            font=("Arial", 16),
-                           text="Start Game",
-                           command=game)
-        play_game.place(relx=0.5, rely=0.5, anchor=CENTER)
+                           text="Open Console",
+                           command=console_run)
+        dev_mode.place(relx=0.5, rely=0.5, anchor=CENTER)
         error_app.mainloop()
-
-

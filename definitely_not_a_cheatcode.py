@@ -8,11 +8,10 @@ from application_window import login
 from error_main import error_exe_app
 from error_game import game
 from error_settings import settings
-
 # -_- YOU CHEATER
 
 def dev():
-    print("----------Dev Console----------")
+    print("----------The Real Dev Console----------")
     print("1 = Start")
     print("2 = Death Window")
     print("3 = Corrupted Window")
