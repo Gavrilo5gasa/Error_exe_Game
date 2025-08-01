@@ -1,7 +1,7 @@
 from os import WCONTINUED
 from time import sleep
 
-from aaa_start_here import main
+import aaa_start_here
 from Dead_tools import death_window
 from error_windows import corroupted
 from application_window import login
@@ -9,6 +9,7 @@ from error_main import error_exe_app
 from error_game import game
 from console import console_run
 from error_settings import settings
+from black_window import black_out
 # -_- YOU CHEATER
 
 def dev():
@@ -21,6 +22,7 @@ def dev():
     print("6 = Good Boy game")
     print("7 = Settings :)")
     print("8 = Console")
+    print("9 = Black window")
     print("0 = Exit")
     a = input("Input: ")
 
@@ -28,7 +30,7 @@ def dev():
         print("Sending you to the main window...")
         sleep(1)
         print("Success!")
-        main()
+        aaa_start_here.main_window()
 
     elif a == "2":
         print("Sending you to the dead window...")
@@ -65,6 +67,18 @@ def dev():
         sleep(1)
         print("Success!")
         settings()
+
+    elif a == "8":
+        print("Sending you to the console...")
+        sleep(1)
+        print("Success!")
+        console_run()
+
+    elif a == "9":
+        print("Sending you to the black window...")
+        sleep(1)
+        print("Success!")
+        black_out()
 
     elif a == "0":
         return

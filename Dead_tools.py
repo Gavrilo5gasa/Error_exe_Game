@@ -6,7 +6,7 @@ from error_windows import resouces, win
 def death_window():
 
     # This function creates a new window that looks the same as the main window
-    death = Toplevel()
+    death = Tk()
     death.geometry("300x310")
     death.title("Error.exe")
     death.configure(background="#3B3B3B")

@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 from console import console_run
 from error_settings import settings
+from escape import exit_1
 
 def confirmed():
     if messagebox.askyesno(title="Do you want to continue", message="Are you shure your password is strong"):
@@ -26,7 +27,16 @@ def error_exe_app():
                            font=("Arial", 16),
                            text="Open Console",
                            command=console_run)
-        dev_mode.place(relx=0.5, rely=0.5, anchor=CENTER)
+        dev_mode.place(relx=0.5, rely=0.5,)
+
+
+        exit_button = Button(error_app,
+                             font=("", 16),
+                             text="Exit",
+                             command=exit_1)
+        exit_button.place(x = 2000, y = 0)
+
+
         error_app.mainloop()
 
 if __name__ == "__main__":

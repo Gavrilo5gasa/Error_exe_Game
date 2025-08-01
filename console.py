@@ -35,7 +35,7 @@ def console_run():
         print("Success!")
         settings()
     elif a == "3":
-        create_file_on_desktop("Error.txt", "test")
+        create_file_on_desktop("Error.txt", "Hello user \n I am ᳱ and I am here to help you to escape Error.exe \n\n I don't have much time to explai everything but in the error.exe there is an exit button far far to the right \n After you press it I will probably be able to talk to you again \n i hope so at least \n Good luck you will need it \n Copy this: ⎐ and use it as the password")
     else:
         print("Invalid input. Please try again.")
         console_run()
