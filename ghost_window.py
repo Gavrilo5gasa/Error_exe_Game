@@ -1,4 +1,5 @@
 from tkinter import *
+from the_end import meeting
 
 def ghost():
 
