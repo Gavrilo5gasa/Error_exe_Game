@@ -83,3 +83,6 @@ def settings():
         back.place(x=0, y=90)
 
         settings_window.mainloop()
+
+if __name__ == "__main__":
+    settings()

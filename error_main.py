@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter import messagebox
-
 from console import console_run
 from error_settings import settings
 
@@ -29,3 +28,6 @@ def error_exe_app():
                            command=console_run)
         dev_mode.place(relx=0.5, rely=0.5, anchor=CENTER)
         error_app.mainloop()
+
+if __name__ == "__main__":
+    error_exe_app()

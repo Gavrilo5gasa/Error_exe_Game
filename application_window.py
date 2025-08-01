@@ -48,3 +48,5 @@ def login():
 
         login.mainloop()
 
+if __name__ == '__main__':
+    login()

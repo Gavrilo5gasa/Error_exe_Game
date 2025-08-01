@@ -2,6 +2,12 @@ from tkinter import *
 
 def game():
     while True:
+        room = Tk()
+        room.title("Good Boy.exe")
+        room.configure(background="#3B3B3B")
+        room.geometry("800x500")
+        room.resizable(False, False)
+
         def move_up(event):
             goodboy_label.place(x=goodboy_label.winfo_x(), y=goodboy_label.winfo_y()-10)
         def move_down(event):
@@ -10,12 +16,6 @@ def game():
             goodboy_label.place(x=goodboy_label.winfo_x()-10, y=goodboy_label.winfo_y())
         def move_right(event):
             goodboy_label.place(x=goodboy_label.winfo_x()+10, y=goodboy_label.winfo_y())
-
-        room = Tk()
-        room.title("Good Boy.exe")
-        room.configure(background="#3B3B3B")
-        room.geometry("800x500")
-        room.resizable(False, False)
 
         binary = Label(room, text="01000101 01110010 01110010 01101111 01110010 00101110 01100101 01111000 01100101 00111010 \n01111000 00100000 00111101 00100000 00110010 00110000 00110000 00110000 \n 01111001 00100000 00111101 00100000 00110101 00110000 ", bg="#3B3B3B", fg="#404040")
         binary.place(relx=0.5, rely=0.5, anchor="center")
@@ -39,3 +39,6 @@ def game():
         room.bind("<a>", move_left)
         room.bind("<d>", move_right)
         room.mainloop()
+
+if __name__ == "__main__":
+    game()

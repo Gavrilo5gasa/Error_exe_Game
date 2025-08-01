@@ -7,11 +7,12 @@ from error_windows import corroupted
 from application_window import login
 from error_main import error_exe_app
 from error_game import game
+from console import console_run
 from error_settings import settings
 # -_- YOU CHEATER
 
 def dev():
-    print("----------The Real Dev Console----------")
+    print("----------Dev Console----------")
     print("1 = Start")
     print("2 = Death Window")
     print("3 = Corrupted Window")
@@ -19,6 +20,7 @@ def dev():
     print("5 = Error.exe")
     print("6 = Good Boy game")
     print("7 = Settings :)")
+    print("8 = Console")
     print("0 = Exit")
     a = input("Input: ")
 
